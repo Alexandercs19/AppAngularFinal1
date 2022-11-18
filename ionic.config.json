@@ -1,0 +1,7 @@
+{
+  "name": "AngularAppFinal1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
