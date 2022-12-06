@@ -1,0 +1,32 @@
+@import "swiper/scss";
+@import "@ionic/angular/css/ionic-swiper";
+
+.Titulo-Noticias {
+  text-align: center;
+}
+.Servicios-titulo {
+  text-align: center;
+  color: black;
+}
+.Servicios-titulo {
+  text-align: center;
+}
+.Servicios-titulo.ios {
+  font-size: large;
+}
+.Titulo-Imagen.ios {
+  font-size: medium;
+}
+
+/* iOS places the subtitle above the title */
+ion-card-header.ios {
+  display: flex;
+  flex-flow: column-reverse;
+}
+ion-item {
+  --padding-start: 0;
+}
+
+.servicios-section {
+  background-color: blue;
+}

@@ -6,13 +6,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    { title: 'Inicio', url: '/inicio', icon: 'Home' },
+    { title: 'Historia', url: '/historia', icon: 'book' },
+    { title: 'Servicios', url: '/servicios', icon: 'construct' },
+    { title: 'Noticias', url: '/noticias', icon: 'newspaper' },
+    { title: 'Videos', url: '/videos', icon: 'film' },
+    { title: 'Albergues', url: '/albergues', icon: 'bed' },
+    { title: 'Mapa', url: '/mapa', icon: 'map' },
+    { title: 'Medidas Preventivas', url: '/medidas', icon: 'alert-circle' },
+    { title: 'Miembros', url: '/miembros', icon: 'people-circle' },
+    { title: 'Quiero ser Voluntario', url: '/quiero', icon: 'person-add' },
+    { title: 'Acerca de ', url: '/acerca-de', icon: 'reader' },
+    { title: 'Iniciar Sesion', url: '/iniciar-sesion', icon: 'id-card' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  constructor() {}
 }
