@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GetapiService } from '../api/getapi.service';
 
 @Component({
   selector: 'app-noticias',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoticiasPage implements OnInit {
 
-  constructor() { }
+  constructor(public _services: GetapiService) {
+
+    
+
+   }
 
   ngOnInit() {
   }
