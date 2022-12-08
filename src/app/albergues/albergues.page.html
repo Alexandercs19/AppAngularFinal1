@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="warning">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -8,5 +8,21 @@
 </ion-header>
 
 <ion-content>
+  <div *ngFor="let item of optdata">
+    <ion-card color="light">
+      <ion-card-header>
+        <ion-card-title>{{item.edificio}}</ion-card-title>
+        <ion-card-subtitle>{{item.ciudad}}</ion-card-subtitle>
+        <ion-card-subtitle>Coordinador: {{item.coordinador}}</ion-card-subtitle>
+        <ion-card-subtitle>Codigo: {{item.codigo}}</ion-card-subtitle>
+        <ion-card-subtitle>{{item.telefono}}</ion-card-subtitle>
+        <ion-card-subtitle>latitud: {{item.lat}}</ion-card-subtitle>
+        <ion-card-subtitle>longitud: {{item.lng}}</ion-card-subtitle>
+      </ion-card-header>
 
+      <ion-card-content class="capacidad">
+        Capacidad: {{item.capacidad}}
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
