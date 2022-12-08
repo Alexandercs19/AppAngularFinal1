@@ -8,13 +8,25 @@ import { GetapiService } from '../api/getapi.service';
 })
 export class NoticiasPage implements OnInit {
 
-  constructor(public _services: GetapiService) {
+  optdata: any []=[]
 
-    
 
-   }
-
-  ngOnInit() {
+  constructor() {
+    this.Obtener();
+  }
+  Obtener = async () => {
+    await fetch('https://adamix.net/defensa_civil/def/noticias.php')
+      .then((response) => response.json())
+      .then((data) => {
+        // ASIGNANDO LOS DATOS DE LA API A MI ARRAY.
+        console.log(data.datos);
+        this.optdata = data.datos;
+      });
+      
+  };
+  ngOnInit() {}
+  ionViewDidLoad() {
+    this.Obtener();
   }
 
 }
