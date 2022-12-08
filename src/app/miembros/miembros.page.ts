@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MiembrosPage implements OnInit {
 
-  constructor() { }
+  optdata: any []=[]
 
-  ngOnInit() {
+
+  constructor() {
+    this.Obtener();
   }
-
+  Obtener = async () => {
+    await fetch('https://adamix.net/defensa_civil/def/miembros.php')
+      .then((response) => response.json())
+      .then((data) => {
+        // ASIGNANDO LOS DATOS DE LA API A MI ARRAY.
+        console.log(data.datos);
+        this.optdata = data.datos;
+      });
+      
+  };
+  ngOnInit() {}
+  ionViewDidLoad() {
+    this.Obtener();
+  }
 }
