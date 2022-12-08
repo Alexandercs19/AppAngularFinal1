@@ -1,4 +1,4 @@
-import { HttpClientModule } from "@angular/common/http";
+import { HttpClientModule } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -8,12 +8,8 @@ import { Injectable } from '@angular/core';
 export class GetapiService {
   constructor(public _http: HttpClient) {}
 
-  getdata<T> (url : string)
-  {
-    url = 'https://adamix.net/defensa_civil/';
+  getdata<T>(url: string) {
+    url = 'https://adamix.net/defensa_civil/def/servicios.php';
     return this._http.get<T[]>(url);
-    
   }
-
-
 }
