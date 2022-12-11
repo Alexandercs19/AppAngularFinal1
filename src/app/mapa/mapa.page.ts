@@ -3,7 +3,7 @@ import { coordInfo } from '../models/coord-interface.model';
 import { Marker } from '../models/marker.model';
 
 
-declare var google: any;
+ var google;
 
 @Component({
   selector: 'app-mapa',
@@ -15,31 +15,14 @@ declare var google: any;
 
 export class MapaPage implements OnInit {
 
-  optdata: any[] = [];
-  map = null;
- 
-
-
   constructor() {
-    this.Obtener();
+    
   }
-  Obtener = async () => {
-    await fetch('https://adamix.net/defensa_civil/def/albergues.php')
-      .then((response) => response.json())
-      .then((data) => {
-        // ASIGNANDO LOS DATOS DE LA API A MI ARRAY.
-        console.log(data.datos);
-        this.optdata = data.datos;
-      });
-  };
+
+
+
   ngOnInit() {}
-  ionViewDidLoad() {
-    this.Obtener();
-
-  }
-
-  loadMap(){
-  }
+ 
 
   
 }
