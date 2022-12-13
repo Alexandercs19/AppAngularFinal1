@@ -13,7 +13,7 @@ export class AppComponent {
     { title: 'Noticias', url: '/noticias', icon: 'newspaper' },
     { title: 'Videos', url: '/videos', icon: 'film' },
     { title: 'Albergues', url: '/albergues', icon: 'bed' },
-    { title: 'Mapa', url: '/mapa', icon: 'map' },
+    // { title: 'Mapa', url: '/mapa', icon: 'map' },
     { title: 'Medidas Preventivas', url: '/medidas', icon: 'alert-circle' },
     { title: 'Miembros', url: '/miembros', icon: 'people-circle' },
     { title: 'Quiero ser Voluntario', url: '/quiero', icon: 'person-add' },

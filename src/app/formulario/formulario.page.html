@@ -1,8 +1,8 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="warning">
     <ion-title>Formulario</ion-title>
   </ion-toolbar>
-  <a href="/quiero"><ion-button expand="block" >Back</ion-button></a>
+  <a href="/quiero"><ion-button expand="block">Back</ion-button></a>
 </ion-header>
 
 <ion-content>
@@ -11,30 +11,46 @@
       <ion-label>Nombre</ion-label>
       <ion-input placeholder="Nombre" [(ngModel)]="nombre"></ion-input>
     </ion-item>
-  
+
     <ion-item>
       <ion-label>Apellido</ion-label>
-      <ion-input  placeholder="Apellido" [(ngModel)]="apellido"></ion-input>
+      <ion-input placeholder="Apellido" [(ngModel)]="apellido"></ion-input>
     </ion-item>
-  
-        <ion-item>
+
+    <ion-item>
       <ion-label>Cedula</ion-label>
-      <ion-input type="number" placeholder="Cedula" [(ngModel)]="cedula"></ion-input>
+      <ion-input
+        type="number"
+        placeholder="Cedula"
+        [(ngModel)]="cedula"
+      ></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label>Contraseña</ion-label>
-      <ion-input type="password" value="password" [(ngModel)]="clave"></ion-input>
+      <ion-input
+        type="password"
+        value="password"
+        [(ngModel)]="clave"
+      ></ion-input>
     </ion-item>
-  
+
     <ion-item>
       <ion-label>Correo</ion-label>
-      <ion-input type="email" placeholder="email@ejemplo.com" [(ngModel)]="correo"></ion-input>
+      <ion-input
+        type="email"
+        placeholder="email@ejemplo.com"
+        [(ngModel)]="correo"
+      ></ion-input>
     </ion-item>
-  
+
     <ion-item>
       <ion-label>Telefono</ion-label>
-      <ion-input type="tel" placeholder="888-888-8888" [(ngModel)]="telefono"></ion-input>
+      <ion-input
+        type="tel"
+        placeholder="888-888-8888"
+        [(ngModel)]="telefono"
+      ></ion-input>
     </ion-item>
   </ion-list>
   <ion-button expand="block" (click)="login()">Enviar</ion-button>
