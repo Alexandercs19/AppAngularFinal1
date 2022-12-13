@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Registrovolntarios } from '../interfaces/registrovolntarios';
 
 @Component({
   selector: 'app-formulario',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormularioPage implements OnInit {
   optdata: any []=[]
+  token : any;
+  http: any;
 
 
   constructor() {
@@ -27,7 +30,11 @@ export class FormularioPage implements OnInit {
     this.Obtener();
   }
 
-  /*crearUsuario(voluntario: RegistroVoluntarios){
+  login(){
+    localStorage.setItem('token', this.token)
+  }
+
+  /*crearUsuario(voluntario: Registrovolntarios){
     const url ="https://adamix.net/defensa_civil/def/registro.php";
 
     let data = new FormData();
