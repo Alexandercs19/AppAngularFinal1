@@ -62,7 +62,16 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+      path: 'formulario',
+    loadChildren: () =>
+      import('./formulario/formulario.module').then(
+        (m) => m.FormularioPageModule
+      ),
   }
+
+  
 ];
 
 @NgModule({

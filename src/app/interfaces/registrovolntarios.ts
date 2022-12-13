@@ -1,11 +1,11 @@
 import { TeardownLogic } from "rxjs";
 
 export interface Registrovolntarios {
-    id: number;
+    id: '0';
     nombre: string;
-    apllido: string;
-    cedula: number;
-    passw: string;
+    apellido: string;
+    cedula: string;
+    clave: string;
     correo: string;
-    telefono: number;
+    telefono: string;
 }
