@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { CoordInfor } from 'models/coord-info.model';
+import { Marker } from 'models/marker.model';
+import { MapControllerService } from '../services/map-controller.service';
+
+declare var google: any;
 
 @Component({
   selector: 'app-mapa',
@@ -6,10 +11,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mapa.page.scss'],
 })
 export class MapaPage implements OnInit {
+ constructor(){}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+ ngOnInit(): void {
+     
+ }
 }
