@@ -26,6 +26,9 @@
 @import "~@ionic/angular/css/flex-utils.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,700&display=swap");
 
+@import "swiper/scss";
+@import "@ionic/angular/css/ionic-swiper";
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
